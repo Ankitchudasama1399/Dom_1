@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+div {
+    margin-top: 50px;
+}
+</style>
+
+<body>
+<input type="text" placeholder="inter 1st number" id="firtNumber">
+<input type="text" placeholder="inter 2nd number" id="secondNumber">
+
+<div>
+    <button onclick="addition()">Add</button>
+    <button onclick="subs()">Subtract</button>
+    <button onclick="divi()">Divide</button>
+    <button onclick="multi()">Multiply</button>    
+</div>
+
+
+</body>
+
+<script>
+let number1 = document.getElementById("firtNumber");
+let number2 = document.getElementById("secondNumber");
+
+function addition() {
+    let sum = +number1.value + +number2.value
+    console.log(alert(sum));
+}
+
+function subs() {
+    let sum = +number1.value - +number2.value
+    console.log(alert(sum));
+}
+
+function divi() {
+    let sum = +number1.value / +number2.value
+    console.log(alert(sum));
+}
+
+function multi() {
+    let sum = +number1.value * +number2.value
+    console.log(alert(sum));
+}
+
+</script>
+</html>
